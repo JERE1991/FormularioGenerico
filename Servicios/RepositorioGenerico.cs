@@ -13,11 +13,11 @@ namespace FormularioGenerico1._5.Servicios
     }
         public class RepositorioGenerico : IRepositorioGenerico
     { 
-        private readonly string connectionsStrings;
+        private readonly string connectionStrings;
 
         public RepositorioGenerico(IConfiguration configuration)
         {
-            connectionsStrings = configuration.GetConnectionString("DefaultConnection");
+            connectionStrings = configuration.GetConnectionString("DefaultConnection");
 
         }
 
@@ -28,7 +28,7 @@ namespace FormularioGenerico1._5.Servicios
 
         public void FormularioGenerico(FormularioGenerico formularioGenerico)
         {
-              using (var conexion = new SqlConnection(connectionsStrings))
+              using (var conexion = new SqlConnection(connectionStrings))
             {
                 conexion.Query("$@fcinsert into FormularioGenerico" +
                      "(nombre_usuario, apellido_usuario, sexo_usuario, fecha_usuario, edad_usuario)" +
