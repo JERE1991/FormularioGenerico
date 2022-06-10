@@ -28,7 +28,7 @@ public interface IRepositorioGenerico{
                     "(@nombre_usuario, @apellido_usuario, @sexo_usuario, @fecha_usuario, @edad_usuario) ", formularioGenerico);
             }
 
-        }156165
+        }
 
 
     }
