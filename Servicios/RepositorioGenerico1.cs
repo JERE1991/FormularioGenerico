@@ -11,11 +11,11 @@ namespace FormularioGenerico1._5.Servicios
 {public interface IRepositorioGenerico{
         void FormulariadoGenerizado(FormularioGenerico formularioGenerico);
     }
-        public class RepositorioGenerico : IRepositorioGenerico
+    public class RepositorioGenerico1 : IRepositorioGenerico
     { 
         private readonly string connectionStrings;
 
-        public RepositorioGenerico(IConfiguration configuration)
+        public RepositorioGenerico1(IConfiguration configuration)
         {
             connectionStrings = configuration.GetConnectionString("DefaultConnection");
 

@@ -1,4 +1,5 @@
 ﻿using FormularioGenerico1._5.Models;
+using FormularioGenerico1._5.Servicios;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System;
@@ -11,24 +12,24 @@ namespace FormularioGenerico1._5.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
-        
-       
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IRepositorioGenerico repositorioGenerico;
+
+        public HomeController(IRepositorioGenerico repositorioGenerico)
         {
-            _logger = logger;
+            this.repositorioGenerico = repositorioGenerico;
+
         }
-        [HttpGet]
+
         public IActionResult Index()
         {
             return View();
         }
-        [HttpGet]
+
         public IActionResult Privacy()
         {
             return View();
         }
-        [HttpGet]
+        [HttpPost]
         public IActionResult FormularioGenerico()
         {
 
@@ -38,6 +39,7 @@ namespace FormularioGenerico1._5.Controllers
         [HttpPost]
         public IActionResult FormularioGenerico(FormularioGenerico formularioGenerico)
         {
+            repositorioGenerico.FormulariadoGenerizado(formularioGenerico);
             return View();
         }
 

@@ -6,10 +6,6 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FormularioGenerico1.5", "FormularioGenerico1.5.csproj", "{90B4113F-2372-43DA-9E2B-1AFE913F5A34}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Servicios", "Servicios", "{ADF8967E-5C8A-443F-894B-6032ECC2DDC9}"
-	ProjectSection(SolutionItems) = preProject
-		Repositorio.cs = Repositorio.cs
-		RepositorioGenerico.cs = RepositorioGenerico.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{06827770-7FD5-4B46-B75F-41605480DFCB}"
 	ProjectSection(SolutionItems) = preProject

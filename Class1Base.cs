@@ -3,6 +3,6 @@
     public class Class1Base
     {
 
-        public void FormulariadoGenerizado(FormularioGenerico formularioGenerico);
+        
     }
 }
